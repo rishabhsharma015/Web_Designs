@@ -1,0 +1,81 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding: 18px 45px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0.2s;
+    z-index: 11111;
+}
+
+button::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear 0.2s;
+    z-index: -1;
+}
+
+button:hover::after{
+    width: 100%;
+}
+
+button:hover{
+    color: black;
+}
+
+
+
+#btn2{
+    padding: 18px 45px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid lightseagreen;
+    color: lightseagreen;
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0.2s;
+    z-index: 1111;
+}
+
+#btn2::after{
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: cyan;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all linear 0.2s;
+    z-index: -1;
+}
+
+#btn2:hover::after{
+    transform: translate(-50%, -50%) scale(2.3);
+}
+
+#btn2:hover{
+    color: black;
+}

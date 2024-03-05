@@ -1,0 +1,88 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    width: 350px;
+    height: 100px;
+    background-color: crimson;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    animation-name: show-box;
+    animation-duration: 1.3s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.name{
+    width: 350px;
+    height: 100px;
+    /* background-color: crimson; */
+    position: absolute;
+    top: 50%;
+    left: 27.2%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: box-anime;
+    animation-duration: 1.3s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    z-index: 10000;
+
+}
+
+.name h3{
+    font-weight: 100;
+    font-size: 37px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    animation-name: box-anime;
+    animation-duration: 1.3s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    color: white;
+    animation-timing-function: ease-out;
+}
+
+
+
+@keyframes box-anime {
+    0%{
+        top: 50%;
+        left: 27.2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        border: none;
+    }
+
+    100%{
+        left: 50%;
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes show-box {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

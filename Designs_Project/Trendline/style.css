@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    /* background-color: lightgreen; */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.nav-part1{
+    display: flex;
+    align-items: center;
+}
+
+.c1{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.line{
+    width: 1.8px;
+    height: 4px;
+    background-color: black;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-part2 h4{
+    font-weight: 400;
+    font-size: 0.866vw;
+    color: black;
+} 
+
+.nav-part2 h6{
+    display: none;
+}
+
+.nav-part2 h4 span:nth-child(2){
+    margin-left: 1.16vw;
+}
+
+
+.nav-part2 h4 span:nth-child(2){
+    color: rgb(180, 176, 176);
+}
+
+.nav2{
+    /* background-color: lightcoral; */
+    height: 2.66vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 78px;
+    padding: 0 35px;
+}
+
+.nav2 h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.933vw;
+}
+
+.content{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: lightseagreen; */
+}
+
+.header-div{
+    width: 100%;
+    height: 40%;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+/* Here we are hiding the scrollbar */
+.header-div::-webkit-scrollbar{      
+    background-color: transparent;
+    height: 5px;
+
+}
+
+/* thumb is jo scrollbar me move krta hai, usko bolte hai thumb. */
+.header-div::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+.elem{
+
+    width: 62%;
+    height: 100%;
+    /* background-color: lightpink; */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    
+}
+
+.elem h1{
+    font-size: 6.667vw;
+    font-weight: 300;
+    letter-spacing: -0.6vw;
+    word-spacing: 1.8vw;
+    padding-left: 8.66vw;
+}
+
+.inner-div{
+    /* background-color: aqua; */
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-div h4{
+    font-weight: 600;
+}
+
+.inner-div h3{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.content-div{
+    width: 100%;
+    height: 60%;
+    /* background-color: lightgreen; */
+    display: flex;
+    overflow-x: auto;
+}
+
+.content-div::-webkit-scrollbar{
+    display: none;
+}
+
+.content-div img{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: 0% 15%;
+}
+
+
+@media (max-width:710px){
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav{
+        /* background-color: lightgreen; */
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .nav-part1{
+        display: flex;
+        align-items: center;
+    }
+    
+    .c1{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    
+    .line{
+        width: 1.2px;
+        height: 2px;
+        background-color: black;
+    }
+    
+    .nav-part2{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+    
+    .nav-part2 h4{
+        font-weight: 400;
+        font-size: 16px;
+        color: black;
+
+    } 
+
+    .nav-part2 h4{
+        display: none;
+    }
+
+    #en-ru{
+        display: initial;
+    }
+    
+    .nav-part2 h6{
+        display: initial;
+        font-size: 16px;
+    }
+    
+    .nav-part2 h4 span:nth-child(2){
+        margin-left: 17.5px;
+    }
+
+    
+    .nav-part2 h4 span:nth-child(2){
+        color: rgb(163, 151, 151);
+    }
+
+
+    .nav2{
+        /* background-color: lightcoral; */
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 0 20px;
+    }
+    
+    .nav2 h3{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+        color: #444444;
+    }
+
+    .content{
+        width: 100%;
+        height: calc(100% - 100px);
+        /* background-color: lightseagreen; */
+    }
+    
+    .header-div{
+        width: 100%;
+        height: 30%;
+        /* background-color: cadetblue; */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+    
+    /* Here we are hiding the scrollbar */
+    .header-div::-webkit-scrollbar{      
+        background-color: transparent;
+        height: 5px;
+    
+    }
+    
+    /* thumb is jo scrollbar me move krta hai, usko bolte hai thumb. */
+    .header-div::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    
+    .elem{
+    
+        width: 100%;
+        height: 100%;
+        /* background-color: lightpink; */
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid black; */
+        
+    }
+    
+    .elem h1{
+        font-size: 60px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+        padding: 0 25px;
+        white-space: nowrap;
+    }
+    
+    .inner-div{
+        /* background-color: aqua; */
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .inner-div h4{
+        font-weight: 600;
+    }
+    
+    .inner-div h3{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .content-div{
+        width: 100%;
+        height: 70%;
+        /* background-color: lightgreen; */
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .content-div::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .content-div img{
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        object-fit: cover;
+        object-position: 0% 15%;
+    }
+    
+
+}
