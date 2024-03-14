@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="main w-full h-screen bg-blue-500">
+        <div class="nav px-8 py-4 flex bg-black text-white justify-between items-center border-b-[1px] border-white">
+            <h3 class="font-normal text-xl  text-yellow-200 font-['monument']">nekit</h3>
+            <ul class="gap-14 justify-end items-center hidden lg:flex md:flex xl:flex 2xl:flex">
+                <li class="list-none cursor-pointer font-light">Home</li>
+                <li class="list-none cursor-pointer font-light">About</li>
+                <li class="list-none cursor-pointer font-light">Catalouge</li>
+                <li class="list-none cursor-pointer font-light">Contact</li>
+                <button class="px-4 py-2 bg-yellow-400 text-black rounded-lg cursor-pointer font-normal lg:hover:bg-black lg:hover:text-white lg:transition-all lg:ease-in">Get Started</button>
+            </ul>
+            <h3 class="text-lg lg:hidden md:hidden xl:hidden 2xl:hidden cursor-pointer"><i class="ri-menu-fill"></i></h3>
+        </div>
+
+        <div class="content flex flex-col items-center gap-1 w-full h-[90.2%] bg-black py-20 lg:flex-row lg:gap-20 lg:items-start lg:justify-start lg:px-20 md:flex-row md:gap-20 md:items-start md:justify-start md:px-20">
+            <div class="textsAndbtn flex flex-col items-center mb-5 lg:justify-start lg:items-start lg:w-1/2 lg:h-[100%] lg:border-b-[1px] lg:border-white">
+                <h1 class="font-bold leading-[40px] text-yellow-500 text-4xl lg:text-[55px] lg:leading-[90px] tracking-tighter">Core Web Vitals</h1>
+                <h1 class="font-bold text-white text-4xl lg:text-[55px] tracking-tighter lg:whitespace-nowrap">Template for StarUp</h1>
+                <h4 class="font-extralight text-white text-xs text-center mt-7 w-3/4 lg:text-left lg:w-3/4 lg:text-sm lg:mt-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio eos odit aliquid nesciunt tempora a, dolore consequatur fugiat at sequi harum. Saepe, dolores.</h4>
+                <button class="py-2 px-6 bg-white rounded-xl text-xs mt-5 lg:px-7 lg:py-3 lg:text-sm lg:mt-12 lg:rounded-3xl">Test Drive</button>
+            </div>
+
+            <div class="img w-64 lg:w-2/5 lg:h-[100%]">
+                <img class="w-[100%] h-[100%] object-cover" src="https://images.playground.com/dddaf1c5cf6d4df3bd3c1d2ad5446f96.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

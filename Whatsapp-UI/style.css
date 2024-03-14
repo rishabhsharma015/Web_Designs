@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #00A783;
+    padding: 19px;
+}
+
+.center{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+}
+
+.left{
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #e3e8ef;
+}
+
+.right{
+    width: 70%;
+    height: 100%;
+    background-color: #F0F2F5;
+}
+
+.first-sec{
+    width: 100%;
+    height: 9%;
+    /* border-bottom: 1px solid black; */
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+}
+
+.first-sec .dp{
+    width: 38px;
+    height: 38px;
+    border-radius:50%;
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first-sec .icons-div{
+    /* background-color: greenyellow; */
+    margin-right: 8px;
+}
+
+.first-sec .icons-div i{
+    color: #54656F;
+    font-size: 21px;
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.second-sec{
+    width: 100%;
+    height: 7%;
+    border-bottom: 1px solid #e4e7ec;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12px;
+}
+
+.search{
+    width: 92%;
+    padding: 2px 15px;
+    border-radius: 8px;
+    background-color: #F0F2F5;
+    display: flex;
+    align-items: center;
+}
+
+.search i{
+    color: #54656F;
+}
+
+.second-sec input{
+    border: none;
+    padding: 10px 30px;
+    background-color: #F0F2F5;
+    outline: none;
+}
+
+input::placeholder{
+    color: #667781;
+    font-size: 13px;
+}
+
+
+.second-sec>i{
+    color: #8696A0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chats{
+    width: 100%;
+    height: 84%;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+}
+
+
+.chats::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.chat{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    /* background-color: skyblue; */
+    align-items: center;
+    padding: 0 13px;
+}
+
+.chat-img{
+    width: 55px;
+    height: 51px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.chat-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.uname-msg{
+    height: 100%;
+    /* background-color: yellow; */
+    width: 95%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgb(245, 236, 236);
+}
+
+.uname-msg h3{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #111B3D;
+}
+
+.uname-msg h5{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 4px;
+    color: #111B3D;
+}
+
+.chat:hover{
+    background-color: #dee1e5;
+}
+
+
+.info{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-img{
+    width: 400px;
+    height: 180px;
+    /* background-color: greenyellow; */
+    /* margin-bottom: 5px; */
+}
+
+.info-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.info h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    width: 50%;
+    text-align: center;
+    line-height: 19px;
+    margin-bottom: 25px;
+}
+
+.info>button{
+    padding: 11px 28px;
+    border-radius: 50px;
+    border: none;
+    background-color: #017561;
+    color: white;
+    font-weight: 600;
+}
+
+.below-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-div h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #8696A0;
+}
+
+.below-div i{
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-right: 3px;
+    color: #8696A0;
+}
