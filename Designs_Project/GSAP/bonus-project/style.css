@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PP Woodland';
+    src: url('../bonus-project/PPWoodland-Regular.ttf') format('truetype');
+    /* You can also provide other font formats for better cross-browser compatibility */
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F7EE;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #66734d;
+    padding: 40px;
+}
+
+.page2 h1{
+    font-family: 'PP Woodland';
+    font-size: 4.2vw;
+    text-align: center;
+    color: #434B34;
+    line-height: 4.5vw;
+    font-weight: 400;
+}
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F7EE;
+}
+

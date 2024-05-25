@@ -6,12 +6,18 @@ const navp2 = document.querySelector(".nav-part2")
 const navp3 = document.querySelector(".nav-part3")
 const navp2h4 = document.querySelectorAll(".nav-part2 h4");
 const navp3h4 = document.querySelectorAll(".nav-part3 h4")
+const v1 = document.querySelector(".verti1")
+const v2 = document.querySelector(".verti2")
+const v3 = document.querySelector(".verti3")
 // const hero = document.querySelector(".hero");
 
 menu.addEventListener('click', function(){
     console.log("clicked")
     nav.style.height = "500px";
-    nav.style.background = "black";
+    nav.style.background = "transparent";
+    v1.style.filter = "blur(5px)";
+    v2.style.filter = "blur(5px)";
+    v3.style.filter = "blur(5px)";
     nav.style.transition = "all ease 0.2s"
     nav.style.display = "flex"
     nav.style.flexDirection = "column"
@@ -72,6 +78,10 @@ cross.addEventListener('click', function(){
     cross.style.display = "none"
     menu.style.fontSize = "25px"
     nav.style.border = "none"
+
+    v1.style.filter = "blur(0)";
+    v2.style.filter = "blur(0)";
+    v3.style.filter = "blur(0)";
 
     nav.style.transition = "all ease 0.5s"
     navp2.style.display = "none"

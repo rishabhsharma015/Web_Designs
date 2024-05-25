@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    background-color: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page3{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1{
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(rgb(255, 120, 147), rgb(255, 0, 51));
+    border-radius: 50%;
+}
