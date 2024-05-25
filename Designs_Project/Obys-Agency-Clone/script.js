@@ -205,35 +205,35 @@ gsap.to("#line-2, #line-4", {
 Shery.makeMagnet(".nav-part2 h4");
 
 
-// document.addEventListener("mousemove", (dets)=>{
-//   gsap.to("#flag", {
-//     x: dets.x,
-//     y: dets.y
-//   })
-// })
+document.addEventListener("mousemove", (dets)=>{
+  gsap.to("#flag", {
+    x: dets.x,
+    y: dets.y
+  })
+})
 
-// document.querySelector(".hero3").addEventListener("mouseenter", function(){
-//   gsap.to("#flag", {
-//     opacity: 1,
-//     // duration: 1,
-//     ease: "power3.out",
-//   })
-// })
+document.querySelector(".hero3").addEventListener("mouseenter", function(){
+  gsap.to("#flag", {
+    opacity: 1,
+    // duration: 1,
+    ease: "power3.out",
+  })
+})
 
-// document.querySelector(".hero3").addEventListener("mouseleave", function(){
-//   gsap.to("#flag", {
-//     opacity: 0,
-//     // duration: 1,
-//     ease: "power3.out",
-//   })
-// })
+document.querySelector(".hero3").addEventListener("mouseleave", function(){
+  gsap.to("#flag", {
+    opacity: 0,
+    // duration: 1,
+    ease: "power3.out",
+  })
+})
 
 
 
-// sheryAnimation();
-// cursorAnimation();
-// locomotive();
-// loadingAnimation();
+sheryAnimation();
+cursorAnimation();
+locomotive();
+loadingAnimation();
 
 
 
