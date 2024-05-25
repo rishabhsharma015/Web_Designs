@@ -13,7 +13,8 @@ html, body{
 
 body{
     /* cursor: none; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 
@@ -609,6 +610,7 @@ body{
 @media (max-width: 600px) {
    .main{
     overflow-x: hidden;
+    overflow-y: auto;
     /* background-color: red; */
    }
 
