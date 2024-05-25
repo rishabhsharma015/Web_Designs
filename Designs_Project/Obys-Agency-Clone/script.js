@@ -232,7 +232,7 @@ document.querySelector(".hero3").addEventListener("mouseleave", function(){
 
 sheryAnimation();
 cursorAnimation();
-locomotive();
+// locomotive();
 loadingAnimation();
 
 
